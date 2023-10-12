@@ -1,25 +1,34 @@
-#Description:	Ubuntu 22.04.3 LTS 
-[Any Ubuntu version is alright]
+ Description:	Ubuntu 22.04.3 LTS 
+ Any Ubuntu version is alright, steps might work.
 
-# 1. Check if Java is installed --> java -version 
+# 1. Java Installation
+
+ ### Check if Java is installed 
+## command:
+   java -version 
 
 ![java version](https://github.com/themaxempire23/Kafka-2.1/assets/83220484/6d47137e-2968-4f4f-a3f9-6a089737d7c5)
 
 
-## if not installed run this command:
+if not installed, 
+### run this command:
               sudo apt install openjdk-11-jdk
 
-# 2. Download Kafka --> Open up your favourite web browser, search Kafka  download
+# 2. Download Kafka 
+ 
+Open up your favourite web browser, search Kafka  download
+
 ![Kafka download](https://github.com/themaxempire23/Kafka-2.1/assets/83220484/3ac5a194-6198-4cd3-af6f-045ba3a3e6c4)
 
 
 ![download](https://github.com/themaxempire23/Kafka-2.1/assets/83220484/97589d11-92ce-4bb8-b232-78b0fc241961)
 
-## select any file under binary downloads. *NB: Only 1 
+### select any file under binary downloads. *NB: Only 1 
 
 
 # 3. extract the kafka zip file  in your home directory:
-   ## Command:
+  
+ ## Command:
             tar -xvf kafka_2.13-3.5.1.tgz
   
   confirm that you see the new kafka diretory. 
@@ -33,10 +42,16 @@ cd into new directory, ls to view whats inside (normally you would find 8 files,
 ![8 files](https://github.com/themaxempire23/Kafka-2.1/assets/83220484/48c1d16f-8bc5-4b0b-a9f5-215db1a6ed32)
 
 
-# Note don't close any terminal, unless instructed to. Keep terminals open.
 
 
-# How to run kafka in Ubuntu:
+Note don't close any terminal, unless instructed to. Keep terminals open.
+
+
+
+
+
+
+How to run kafka in Ubuntu:
 
 # 1. open new terminal,
 # 2. Navigate to your kafka directory,
@@ -50,13 +65,17 @@ cd into new directory, ls to view whats inside (normally you would find 8 files,
      bin/zookeeper-server-start.sh config/zookeeper.properties
 
 ## output:
+
 a. make sure you see the zookeper image like in the image below,
+
 ![zooK1](https://github.com/themaxempire23/Kafka-2.1/assets/83220484/e23d8b8b-f6e7-4f6b-93e7-31a6e775cccb)
 
-b. scroll down, 
-![sqlStatus](https://github.com/themaxempire23/Kafka-2.1/assets/83220484/2705396c-bc81-480d-ac14-802bfa134216)
+b. 
 
-## Zookeeper is officially running, Enabling us to run Kafka!
+![zookeeper 2](https://github.com/themaxempire23/Kafka-2.1/assets/83220484/8d5c25a6-94c2-490b-9cd8-9439eea32f84)
+
+
+Zookeeper is officially running, Enabling us to run Kafka!
 
 # 4. Starting the Kafka Environment, 
 
@@ -90,7 +109,7 @@ Open new terminal,
 
 Open a new terminal,
 
-## We use the following command,
+## We use the following command:
     bin/kafka-topics.sh --create --topic quickstart-events --bootstrap-server localhost:9092
 
 ## output:
@@ -104,10 +123,10 @@ Open new terminal,
 ## use this command:
     bin/kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092
 
-## it will promt show you this symbol " > "
-## write anything next to it.
+It will promt show you this symbol " > "
+write anything next to it.
 
-## output:
+output:
 ![writting](https://github.com/themaxempire23/Kafka-2.1/assets/83220484/a4742ddc-12e1-428e-b25b-b213137784ea)
 
 
@@ -117,19 +136,18 @@ Open new terminal,
 ## command: 
     bin/kafka-console-consumer.sh --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
 
-## output:
+output:
 it should output what you have written in the previouse step.
 
 ![consumer](https://github.com/themaxempire23/Kafka-2.1/assets/83220484/ed855460-84cc-49b8-b25a-e81df4950115)
 
 
 
-
-Hope it helped you.
-
+END
 
 
-## Clutch Coder99                                                                   2023
+
+Clutch Coder99                                                                   2023
 
 
 
