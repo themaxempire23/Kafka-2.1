@@ -101,8 +101,8 @@ Open new terminal,
   ![kafka 2](https://github.com/themaxempire23/Kafka-2.1/assets/83220484/130ec8c5-115e-4292-a82b-e27af4edb7d4)
 
     
-   the above command starts our kafka server, situated in the config file, no need to worry about the config file.
-   From her on we can create topics and partitions all running to our kafka server.
+   The above command starts our kafka server, situated in the config file, no need to worry about the config file.
+   From here on we can create topics and partitions all running on our kafka server.
    Lets dive in!
 
 # 5. Creating our topics:
@@ -143,11 +143,16 @@ it should output what you have written in the previouse step.
 
 
 
-END
+end.
 
 
 
-Clutch Coder99                                                                   2023
+
+
+
+
+
+clutch_coder99                                                                   2023
 
 
 
